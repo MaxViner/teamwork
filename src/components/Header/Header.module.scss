@@ -1,0 +1,27 @@
+.Header{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid red;
+    &__links{
+        >ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            list-style: none;
+            >li{
+                font-family: "Montserrat";
+                font-size : 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    &__contacts{
+
+    }
+}
