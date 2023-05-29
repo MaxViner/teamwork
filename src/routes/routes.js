@@ -5,7 +5,7 @@ import {HomePage} from "../Pages/Home/HomePage";
 import TourPage from "../Pages/Tour/TourPage";
 import {BlogPage} from '../Pages/Blog/BlogPage'
 import TourCartPage from "../Pages/TourCart/TourCart";
-import TourProgram_one from "../Pages/TourProgrammPage/TourOne/TourProgram_one";
+import TourProgramOne from "../Pages/TourProgrammPage/TourOne/TourProgramOne";
 import ReviewPage from "../Pages/Review/ReviewPage";
 
 import {HOME_ROUTE, 
@@ -26,7 +26,7 @@ export const routes = [
     },
   {
     path: TOUR_PROGRAM_ROUTE,
-    element: <TourProgram_one />,
+    element: <TourProgramOne />,
   },
   {
     path: TOUR_CART_ROUTE,
