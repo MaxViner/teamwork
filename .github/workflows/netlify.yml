@@ -1,0 +1,28 @@
+name: Netlify Deploy
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.base.ref }}
+    - name: Install dependencies
+      run: npm ci
+    - name: Build Project
+      run: npm run build
+    - name: Deploy to Netlify
+      uses: nwtgck/actions-netlify@v1
+      with:
+        publish-dir: ./build
+        production-sites: ${{ secrets.NETLIFY_SITE_ID }}
+        personal-access-token: ${{ secrets.NETLIFY_ACCESS_TOKEN }}

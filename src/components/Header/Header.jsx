@@ -19,7 +19,7 @@ const Header = () => {
                 <img src={LapkiVtapki} id='lapka2' alt="" />
             </div>
             <h1 className={styles.Header__logo__text}>
-                BIG FOOT
+                BIG FOOT:P
             </h1>
         </div>
         <div className={styles.Header__links}>
