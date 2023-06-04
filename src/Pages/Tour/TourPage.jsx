@@ -1,8 +1,13 @@
-
-
+import styles from './TourPage.module.scss'
+import TourHead from '../../components/Tour/ToutHead/TourHead'
+import TourList from '../../components/Tour/TourList/TourList'
 const TourPage=()=>{
     return(
-        <h1>TourPage</h1>
+        <div className={styles.TourPage}>
+            <TourHead></TourHead>
+           <TourList/>
+
+        </div>
     )
 }
 

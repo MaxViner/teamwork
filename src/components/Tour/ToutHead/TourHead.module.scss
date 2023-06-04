@@ -1,0 +1,116 @@
+.TourHead{
+    background-image: url('../../../accets/img/TourPage/TourHead/header-bg.png');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height: 100vh;
+    &__content{
+        font-family: monospace;
+        width: 60%;
+        text-align: start;
+        padding-left: 15%;
+        >h1{
+            font-size: 48px;
+            >span{
+                background-color: var(--main);
+                color:var(--white);
+                border-radius: 7px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        >p{
+            font-size: 24px;
+        }
+    }
+    &__List{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        &__item{
+            width: 90px;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__Form{
+        margin-top: 15%;
+    }
+}
+
+#continent{
+   position: absolute;
+   top:30px;
+   left: 30%;
+   opacity: 0.8;
+}
+#frag2{
+    position: absolute;
+    top:0;
+    right:0;
+    opacity: 0.8;
+ }
+ #frag1{
+    position: absolute;
+    top:50%;
+    left: 10%;
+    opacity: 0.8;
+ }
+ @media screen and (max-width: 1280px) {
+    #continent {
+      width: 70%;
+      top: 20px;
+      left: 25%;
+    }
+    #frag2 {
+      width: 30%;
+      top: 0;
+      right: 0;
+    }
+    #frag1 {
+      width: 40%;
+      top: 30%;
+      left: 5%;
+    }
+  }
+ @media screen and (max-width: 768px) {
+    #continent {
+      width: 50%;
+      top: 20px;
+      left: 25%;
+    }
+    #frag2 {
+      width: 30%;
+      top: 0;
+      right: 0;
+    }
+    #frag1 {
+      width: 40%;
+      top: 30%;
+      left: 5%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #continent {
+      width: 40%;
+      top: 10px;
+      left: 30%;
+    }
+    #frag2 {
+      width: 20%;
+      top: 0;
+      right: 0;
+    }
+    #frag1 {
+      width: 30%;
+      top: 40%;
+      left: 5%;
+    }
+  }

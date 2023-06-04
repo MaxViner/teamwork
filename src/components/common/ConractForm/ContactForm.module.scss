@@ -1,0 +1,32 @@
+@import url('../../../accets/styles/base.scss');
+
+.ContactForm{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    >p{
+        text-align: start;
+       
+    }
+    >form{
+       
+        height: 60px;
+        display: flex;
+      
+  
+       >input{
+            height: 60px;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            width: 60%;
+       }
+       >button{
+            width: 40%;
+           background-color: var(--main);
+           color: var(--white);
+           border-top-right-radius: 7px;
+           border-bottom-right-radius: 7px;
+       }
+   }
+}
+
