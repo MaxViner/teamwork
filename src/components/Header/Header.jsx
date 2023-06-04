@@ -28,7 +28,7 @@ const Header = () => {
 
  
   return ( 
-    <div className={styles.Header}> 
+    <div className={styles.Header} data-testid="header"> 
       <div className={styles.Header__logo}> 
         <img src={logo} alt="" /> 
       </div> 
