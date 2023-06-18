@@ -5,7 +5,6 @@ import {GiMountainCave, GiBearHead, GiWhaleTail, GiBasket} from 'react-icons/gi'
 import {LuTent} from 'react-icons/lu' 
 import {MdEmojiNature} from 'react-icons/md'
 import { useState } from 'react';
-import arrow from '../../../assets/img/TourPage/TourRemember/arrow.svg'
 import {BsArrowLeftCircle, BsArrowRightCircle} from 'react-icons/bs'
 
 
