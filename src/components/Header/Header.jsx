@@ -1,9 +1,9 @@
 import React, { useState } from "react"; 
 import { Link, useLocation } from "react-router-dom"; 
 import styles from "./Header.module.scss"; 
-import logo from "../../accets/img/HomePage/logo.svg"; 
+import logo from "../../assets/img/HomePage/logo.svg"; 
 import {  FaTimes } from 'react-icons/fa';
-import menu from '../../accets/img/Header/menu.png'
+import menu from '../../assets/img/Header/menu.png'
 import { 
   BLOG_ROUTE, 
   TOUR_ROUTE, 
@@ -55,10 +55,10 @@ const Header = () => {
             </li> 
           )} 
         </ul> 
-        <div className={styles.Header__links__icon} onClick={handleShowLinks}>  
-          <img src={menu} alt="" />
-        </div>
       </div> 
+        <div className={styles.Header__links__icon} onClick={handleShowLinks}>  
+          <img src={menu} alt="" width={"28px"}/>
+        </div>
       <div className={styles.Header__contacts}> 
         <h4 className={styles.Header__contacts__number}> 
           +7 (999) 999 99 99 

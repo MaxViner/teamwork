@@ -1,0 +1,22 @@
+.TourPage{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+
+    align-items: center;
+    @media screen and (max-width: 600px) {
+        gap: 200px;
+}
+}
+
+.preFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    img{
+        width: 100%;
+    }
+}

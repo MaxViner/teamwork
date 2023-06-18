@@ -1,0 +1,52 @@
+.Board{
+   display: flex;
+   align-items: center;
+   width: 90%;
+   text-align: center;
+  @media screen and (max-width:800px){
+    flex-direction: column;
+  }
+   img{
+     height: 100%;
+    width: 60%;
+    @media screen and (max-width:800px){
+     width: 90%;
+    }
+   }
+   form{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    h2{
+      width: 80%;
+      font-weight: 36px
+    }
+    p{
+      width: 80%;
+      font-size: 17px;
+    }
+    input{
+      height: 40px;
+      border-radius: 8px;
+      width: 80%;
+      background-color:var(--white);
+      color: black;
+    }
+    button{
+      margin-top: -20px;
+      color: var(--white);
+      border: none;
+      height: 40px;
+      border-radius: 8px;
+      width: 80%;
+      background-color: var(--main);
+    }
+    @media screen and (max-width:800px){
+      width: 90%;
+     }
+   }
+}

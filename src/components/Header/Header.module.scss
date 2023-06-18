@@ -3,22 +3,37 @@
     width: 100%; 
     position: absolute; 
     top: 0; 
+   z-index: 666;
+    background: transparent;
     display: flex; 
     justify-content: space-between; 
     flex-direction: row; 
-    border: 1px solid red; 
+
      
     &__logo { 
       img { 
          
       } 
     } 
-     
+    &__links__icon{
+      img{
+        display: none;
+      }
+
+    }
+    &__mobile_links__close{
+      display: none;
+    }
+    &__mobile_links{
+      display: none;
+    }
     &__links { 
+      z-index: 777;
       display: flex; 
       align-items: center; 
        
       ul { 
+        z-index: 888;
         display: flex; 
         align-items: center; 
         justify-content: space-around; 
@@ -29,18 +44,23 @@
           font-family: "Montserrat"; 
           font-size: 18px; 
           line-height: 22px; 
+         
+            z-index: 999;
+          :visited {
+            color: gray;
         } 
+      
       } 
-       
+      img{
+        display: none;
+      }
       &__icon { 
         display: flex; 
         align-items: center; 
         justify-content: center; 
         color: #fff; 
         cursor: pointer; 
-        >img{
-            display: none;
-        }
+       
          
         &:hover { 
           color: #ccc; 
@@ -83,6 +103,7 @@
         margin: 0; 
          
         &.show { 
+          border: 1px solid red;
           display: block; 
           animation: showLinks 0.5s forwards; 
         } 
@@ -121,14 +142,18 @@
   @media screen and (max-width: 1000px) { 
     .Header { 
       &__links { 
+        display: none;
+       
         ul { 
           display: none; 
         } 
          
         &__icon { 
+          margin-top: 20px;
             display: block;
-            border: 3px solid red;
+      
             width: 40px;
+            height: 40px;
           display: flex; 
           >img{
             display: block;
@@ -137,8 +162,33 @@
         } 
       } 
        
-      &__mobile_links { 
-        display: none; 
-      } 
+      .Header__mobile_links.show {
+        display: block;
+      }
     } 
   } 
+}
+.Header__mobile_links.show {
+  position: absolute;
+  top:70px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.74);
+  height: max-content;
+  >
+  ul{
+    list-style: none;
+  }
+}
+@media screen and (max-width: 600px) { 
+  .Header { 
+
+&__logo { 
+      img { 
+         width: 220px;
+
+      } 
+  }
+  }
+}

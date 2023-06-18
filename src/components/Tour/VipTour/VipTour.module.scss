@@ -1,0 +1,77 @@
+.VipTour{
+    background-color: white;
+    width: 92%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 40% 58%;
+    &__img{
+        margin-right: 20px;
+        img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
+    &__content{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 87px;
+            height: 15px;
+        }
+        h1{
+            font-family: Montserrat;
+            font-style: Bold;
+            font-size: 36px;
+            line-height: 44px;
+
+            text-align: Left;
+            vertical-align: Top;
+
+        }
+        button{
+            height: 60px;
+            width: 40%;
+            font-size: 12px;
+            
+            background-color: var(--main);
+            color: var(--white);
+            border-radius: 7px;
+           border: none;
+           }
+    }
+    &__List{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        &__item{
+            width: 22%;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      @media screen and (max-width: 600px) {
+        &__List{
+          
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 30px;
+            &__item{
+               
+                width: 100%;
+            }
+      }
+}
+}

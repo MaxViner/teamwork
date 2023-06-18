@@ -1,0 +1,30 @@
+.Review{
+    
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    h1{
+        font-size: 36px;
+        font-weight: 700;
+        font-family: "Montserrat";
+        text-align: center;
+
+    }
+    &__item{
+        margin: 0 10px;
+    }
+    &__description{
+        &__name{
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Montserrat";
+        }
+        &__sity{
+
+        }
+        &__date{
+
+        }
+    }
+}

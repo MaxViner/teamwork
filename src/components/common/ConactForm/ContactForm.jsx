@@ -1,19 +1,13 @@
 import styles from './ContactForm.module.scss'
 
-const ContactForm = () => {
+const ContactForm = ({text}) => {
     const submitHandler = () => {
       alert('soGoood');
     };
   
     return (
         <div className={styles.ContactForm}>
-                <p>Оставьте свой номер, чтобы получить
-                     консультацию <br>
-                     </br>или записаться на ближайший тур 
-                     <b>
-                     {' '} 06.06.2020
-                     </b>
-                </p>
+                {text}
       <form  action="" onSubmit={submitHandler}>
         
         <input

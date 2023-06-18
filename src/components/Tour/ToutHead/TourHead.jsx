@@ -3,10 +3,10 @@ import { FaMountain } from 'react-icons/fa';
 import { GiMountaintop } from 'react-icons/gi';
 import { GiMountainRoad } from 'react-icons/gi';
 import { GiWolfHowl } from 'react-icons/gi';
-import continent from '../../../accets/img/TourPage/TourHead/continent.svg'
-import ContactForm from '../../common/ConractForm/ContactForm';
-import frag1 from '../../../accets/img/TourPage/TourHead/frag1.png'
-import frag2 from '../../../accets/img/TourPage/TourHead/frag2.png'
+import continent from '../../../assets/img/TourPage/TourHead/continent.svg'
+import ContactForm from '../../common/ConactForm/ContactForm';
+import frag1 from '../../../assets/img/TourPage/TourHead/frag1.png'
+import frag2 from '../../../assets/img/TourPage/TourHead/frag2.png'
  
 const TourHead = () => {
   const ListItems = [
@@ -55,7 +55,13 @@ const TourHead = () => {
       </div>
 
       <div className={styles.TourHead__Form}>
-      <ContactForm/>
+      <ContactForm text={<p>Оставьте свой номер, чтобы получить
+                     консультацию <br>
+                     </br>или записаться на ближайший тур 
+                     <b>
+                     {' '} 06.06.2020
+                     </b>
+                </p>}/>
 
       </div>
      <img src={continent} id={styles.continent} alt="" />
